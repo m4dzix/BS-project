@@ -5,6 +5,6 @@ export const Title = styled.h1`
   max-width: 1200px;
   margin: 0 auto;
   font-weight: bold;
-  padding: 10px 30px;
+  padding: 10px 150px;
   color: ${({ theme }) => theme.colors.text};
 `;

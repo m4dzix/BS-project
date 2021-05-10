@@ -10,7 +10,7 @@ export const Square = styled.div`
   align-items: center;
   position: absolute;
   top: 10px;
-  left: calc(100% - 1800px);
+  z-index: 1;
 `;
 export const Text = styled.p`
   color: ${({ theme }) => theme.colors.background};
