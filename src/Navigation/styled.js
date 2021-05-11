@@ -26,5 +26,6 @@ export const Link = styled.a`
   transition: 0.2s;
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover};
+    color: ${({ theme }) => theme.colors.background};
   }
 `;
