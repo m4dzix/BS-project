@@ -1,5 +1,5 @@
 import React from "react";
-import { Section } from "../Section";
+import { Section } from "../../common/Section";
 import { Article } from "./Article";
 import Tile from "./Tile/index";
 import { meetingSchedule } from "./meetingShedule";
