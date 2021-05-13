@@ -1,9 +1,9 @@
 import React from "react";
-import { StyledSection } from "./styled";
+import { StyledSection, Title } from "./styled";
 
 export const Section = ({ title, body }) => (
   <StyledSection>
-    {title}
+    <Title>{title}</Title>
     {body}
   </StyledSection>
 );
