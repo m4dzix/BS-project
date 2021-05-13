@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const StyledArticle = styled.article`
-  display: grid;
-  grid-gap: 20px;
-  margin: 30px 20px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0px 30px;
 `;
 export const Title = styled.h4`
   grid-column-start: 1;
@@ -15,4 +12,13 @@ export const Title = styled.h4`
   width: calc(100% + 60px);
   padding: 15px 30px;
   margin: 20px -30px;
+`;
+export const Button = styled.button`
+  float: right;
+`;
+export const Wrapper = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  transition: 0.3s;
 `;

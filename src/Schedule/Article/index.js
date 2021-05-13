@@ -1,9 +1,17 @@
-import React from "react";
-import { StyledArticle, Title } from "./styled";
+import React, { useState } from "react";
+import { StyledArticle, Wrapper, Title, Button } from "./styled";
 
-export const Article = ({ title, body }) => (
-  <StyledArticle>
-    <Title>{title}</Title>
-    {body}
-  </StyledArticle>
-);
+export const Article = ({ title, body }) => {
+  const [hide, setHide] = useState(false);
+  const toggleHide = () => setHide(!hide);
+  console.log(hide);
+  return (
+    <StyledArticle>
+      <Title>
+        <Button onClick={toggleHide}>+</Button>
+        {title}
+      </Title>
+      {hide ? <Wrapper>{body}</Wrapper> : null}
+    </StyledArticle>
+  );
+};

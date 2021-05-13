@@ -10,6 +10,7 @@ const Schedule = () => {
       title={"Zusammenkünfte"}
       body={meetingSchedule.map((meetings) => (
         <Article
+          key={meetings.type}
           title={meetings.type}
           body={meetings.details.map((meeting) => (
             <Tile
