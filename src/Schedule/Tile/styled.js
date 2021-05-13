@@ -6,6 +6,10 @@ export const StyledTile = styled.div`
   justify-content: center;
   box-shadow: 1px 2px 3px 4px ${({ theme }) => theme.colors.text};
   padding: 50px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.025);
+  }
 `;
 export const Name = styled.h3`
   margin: 0;
