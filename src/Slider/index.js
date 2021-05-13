@@ -6,7 +6,7 @@ const Slider = () => (
   <>
     <StyledSlider>
       {arrayImages.map((image) => (
-        <Foto foto={image}></Foto>
+        <Foto key={image} foto={image}></Foto>
       ))}
     </StyledSlider>
     <InformationField>
