@@ -17,7 +17,7 @@ export const Foto = styled.div`
   background-repeat: no-repeat;
 `;
 export const StyledSlider = styled.div`
-  height: 40%;
+  height: 40vh;
   background-color: ${({ theme }) => theme.colors.mainColor};
   border: 5px solid ${({ theme }) => theme.colors.text};
   display: grid;
