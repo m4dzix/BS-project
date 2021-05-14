@@ -5,7 +5,7 @@ import Article from "./Article";
 
 const AboutUs = () => (
   <>
-    <Slider aboutUs={true} />
+    <Slider vertical={true} />
     <Section
       title={"Lorem ipsum dolor sit amount"}
       body={<Article />}

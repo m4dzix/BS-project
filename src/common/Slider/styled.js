@@ -13,7 +13,7 @@ const marquee = keyframes`
 
 export const Wrapper = styled.div`
   ${(props) =>
-    props.aboutUs &&
+    props.vertical &&
     css`
       display: flex;
       flex-direction: row;
@@ -41,7 +41,7 @@ export const StyledSlider = styled.div`
     border-right: 15px solid ${({ theme }) => theme.colors.mainColor};
   }
   ${(props) =>
-    props.aboutUs &&
+    props.vertical &&
     css`
       width: 40%;
       height: 60vh;
@@ -59,7 +59,7 @@ export const InformationField = styled.div`
   padding: 10px;
   margin: 0 auto;
   ${(props) =>
-    props.aboutUs &&
+    props.vertical &&
     css`
       display: none;
     `}
@@ -75,7 +75,7 @@ export const Text = styled.p`
 export const SubpageInformation = styled.h3`
   display: none;
   ${(props) =>
-    props.aboutUs &&
+    props.vertical &&
     css`
       display: block;
       font-size: 60px;

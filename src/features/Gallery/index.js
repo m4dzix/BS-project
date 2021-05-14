@@ -22,7 +22,7 @@ const images = [
 const Gallery = () => {
   return (
     <>
-      <Slider aboutUs={true} />
+      <Slider vertical={true} />
       <Section
         title={"Lorem ipsum dolor "}
         body={images ? <ImageGallery items={images} /> : null}

@@ -9,14 +9,14 @@ import {
 } from "./styled";
 import { arrayImages } from "./images/arrayImages";
 
-const Slider = ({ aboutUs }) => (
-  <Wrapper aboutUs={aboutUs}>
-    <StyledSlider aboutUs={aboutUs}>
+const Slider = ({ vertical }) => (
+  <Wrapper vertical={vertical}>
+    <StyledSlider vertical={vertical}>
       {arrayImages.map((image) => (
         <Foto key={image} foto={image}></Foto>
       ))}
     </StyledSlider>
-    <InformationField aboutUs={aboutUs}>
+    <InformationField vertical={vertical}>
       <Text>
         {" "}
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -24,7 +24,7 @@ const Slider = ({ aboutUs }) => (
         voluptua.
       </Text>
     </InformationField>
-    <SubpageInformation aboutUs={aboutUs}>
+    <SubpageInformation vertical={vertical}>
       Lorem <br /> ipsum dolor sit!
     </SubpageInformation>
   </Wrapper>
