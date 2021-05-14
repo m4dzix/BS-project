@@ -17,6 +17,7 @@ body {
 a{
   color: inherit;
   text-decoration: none;
+  transition:0.3s;
   &:hover{
     color: ${({ theme }) => theme.colors.hover};
   }
