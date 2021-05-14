@@ -20,13 +20,9 @@ function App() {
           <Route path={toSchedule()}>
             <Schedule />
           </Route>
-        </Switch>
-        <Switch>
           <Route path={toAboutUs()}>
             <AboutUs />
           </Route>
-        </Switch>
-        <Switch>
           <Route path={toBuild()}>
             <Build />
           </Route>
@@ -43,12 +39,3 @@ function App() {
 }
 
 export default App;
-
-// <>
-//   <Main>
-//     <Header />
-//     <Logo />
-//     <Navigation />
-//     <MyGallery />
-//   </Main>
-// </>
