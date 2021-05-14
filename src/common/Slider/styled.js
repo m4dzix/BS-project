@@ -29,7 +29,7 @@ export const Foto = styled.div`
 `;
 export const StyledSlider = styled.div`
   height: 40vh;
-  background-color: ${({ theme }) => theme.colors.mainColor};
+
   border: 5px solid ${({ theme }) => theme.colors.text};
   display: grid;
   grid-template-columns: 0.9fr 0.7fr 0.4fr 1fr;
@@ -79,6 +79,7 @@ export const SubpageInformation = styled.h3`
     css`
       display: block;
       font-size: 60px;
+      max-width: 450px;
       height: 200px;
       padding: 10px;
       margin: 20px;
