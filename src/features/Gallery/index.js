@@ -22,7 +22,7 @@ const images = [
 const Gallery = () => {
   return (
     <>
-      <Slider vertical={true} />
+      <Slider vertical={true} inset={`Lorem Dolorsed diam nonumy `} />
       <Section
         title={"Lorem ipsum dolor "}
         body={images ? <ImageGallery items={images} /> : null}

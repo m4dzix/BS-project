@@ -9,7 +9,7 @@ import {
 } from "./styled";
 import { arrayImages } from "./images/arrayImages";
 
-const Slider = ({ vertical }) => (
+const Slider = ({ vertical, inset }) => (
   <Wrapper vertical={vertical}>
     <StyledSlider vertical={vertical}>
       {arrayImages.map((image) => (
@@ -24,9 +24,7 @@ const Slider = ({ vertical }) => (
         voluptua.
       </Text>
     </InformationField>
-    <SubpageInformation vertical={vertical}>
-      Lorem <br /> ipsum dolor sit!
-    </SubpageInformation>
+    <SubpageInformation vertical={vertical}>{inset}</SubpageInformation>
   </Wrapper>
 );
 

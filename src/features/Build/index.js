@@ -7,7 +7,7 @@ import { StyledLink } from "./styled";
 const Build = () => (
   <>
     {" "}
-    <Slider vertical={true} />
+    <Slider vertical={true} inset={`scing elitr, sed diam nonumy `} />
     <Section
       title={"Lorem Ipsum Dolor"}
       body={
