@@ -19,7 +19,7 @@ const images = [
   },
 ];
 
-const MyGallery = () => {
+const Gallery = () => {
   return (
     <>
       <Slider aboutUs={true} />
@@ -31,4 +31,4 @@ const MyGallery = () => {
   );
 };
 
-export default MyGallery;
+export default Gallery;
