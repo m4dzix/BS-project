@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, List, StyledNavLink, Link } from "./styled";
-import { toSchedule, toAboutUs, toBuild } from "../../routes";
+import { toSchedule, toAboutUs, toBuild } from "../../../routes";
 
 const Navigation = () => (
   <Nav>

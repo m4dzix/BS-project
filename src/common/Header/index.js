@@ -1,6 +1,14 @@
 import React from "react";
-import { Title } from "./styled";
+import Logo from "./Logo";
+import Navigation from "./Navigation";
+import Title from "./Title";
 
-const Header = () => <Title>Lorem ipsum dolor</Title>;
+const Header = () => (
+  <div>
+    <Title title={"Lorem ipsum dolor"} />
+    <Navigation />
+    <Logo />
+  </div>
+);
 
 export default Header;
