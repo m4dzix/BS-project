@@ -1,20 +1,27 @@
 import React from "react";
-import { Nav, List, Link } from "./styled";
+import { Nav, List, StyledNavLink, Link } from "./styled";
+import { toSchedule, toAboutUs, toBuild } from "../../routes";
 
 const Navigation = () => (
   <Nav>
     <List>
       <li>
-        <Link href="">Lorem</Link>
+        <StyledNavLink to={toSchedule()}>Lorem</StyledNavLink>
       </li>
       <li>
-        <Link href="">Lorem ipsum</Link>
+        <StyledNavLink to={toAboutUs()}>Lorem ipsum</StyledNavLink>
       </li>
       <li>
-        <Link href="">Ipsum dolor</Link>
+        <StyledNavLink to={toBuild()}>Ipsum dolor</StyledNavLink>
       </li>
       <li>
-        <Link href="">Lorem</Link>
+        <Link
+          href="https://www.google.com/"
+          target="_blanc"
+          rel="noreferer noopener"
+        >
+          Lorem
+        </Link>
       </li>
     </List>
   </Nav>
