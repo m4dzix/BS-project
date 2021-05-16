@@ -4,7 +4,6 @@ import { StyledArticle, Wrapper, Title, Button } from "./styled";
 export const Article = ({ title, body }) => {
   const [hide, setHide] = useState(false);
   const toggleHide = () => setHide(!hide);
-  console.log(hide);
   return (
     <StyledArticle>
       <Title>

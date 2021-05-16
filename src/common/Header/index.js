@@ -6,14 +6,14 @@ import { StyledHeader } from "./styled";
 import MenuHamburger from "./MenuHamburger";
 
 const Header = () => {
-  const [hide, setHide] = useState(false);
+  const [hide, setHide] = useState(true);
   const toggleHide = () => setHide(!hide);
   return (
     <StyledHeader>
+      <Logo />
       <MenuHamburger toggleHide={toggleHide} />
       <Title title={"Lorem ipsum dolor"} />
       <Navigation hide={hide} />
-      <Logo />
     </StyledHeader>
   );
 };

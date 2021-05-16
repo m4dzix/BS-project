@@ -8,7 +8,7 @@ import Slider from "../../common/Slider";
 const Schedule = () => {
   return (
     <>
-      <Slider />;
+      <Slider />
       <Section
         title={"Zusammenkünfte"}
         body={meetingSchedule.map((meetings) => (
