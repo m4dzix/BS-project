@@ -7,4 +7,13 @@ export const StyledTitle = styled.h1`
   font-weight: bold;
   padding: 10px 150px;
   color: ${({ theme }) => theme.colors.text};
+  @media (max-width: 767px) {
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+  }
+  @media (max-width: 420px) {
+    text-align: left;
+    padding-right: 60px;
+  }
 `;

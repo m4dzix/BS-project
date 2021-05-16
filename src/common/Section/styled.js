@@ -13,4 +13,14 @@ export const Title = styled.h2`
   border-bottom: 3px solid ${({ theme }) => theme.colors.text};
   padding: 30px;
   text-transform: capitalize;
+  @media (max-width: 767px) {
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+  @media (max-width: 340px) {
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+  }
 `;

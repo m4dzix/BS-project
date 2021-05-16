@@ -20,6 +20,9 @@ export const Wrapper = styled.div`
       justify-content: space-between;
       align-items: flex-end;
     `}
+  @media (max-width: 767px) {
+    margin-top: 10px;
+  }
 `;
 export const Foto = styled.div`
   background-image: url(${(props) => props.foto});
@@ -29,7 +32,6 @@ export const Foto = styled.div`
 `;
 export const StyledSlider = styled.div`
   height: 40vh;
-
   border: 5px solid ${({ theme }) => theme.colors.text};
   display: grid;
   grid-template-columns: 0.9fr 0.7fr 0.4fr 1fr;
@@ -48,6 +50,16 @@ export const StyledSlider = styled.div`
       grid-template-rows: 0.9fr 0.7fr 0.4fr 1fr;
       grid-template-columns: 1fr 1fr;
     `}
+  @media (max-width: 767px) {
+    grid-template-columns: 0.9fr 0.7fr 1fr;
+
+    ${Foto}:nth-child(2) {
+      border-bottom: none;
+    }
+    ${Foto}:nth-child(6) {
+      border-right: 15px solid ${({ theme }) => theme.colors.mainColor};
+    }
+  }
 `;
 
 export const InformationField = styled.div`
@@ -63,6 +75,10 @@ export const InformationField = styled.div`
     css`
       display: none;
     `}
+  @media (max-width: 767px) {
+    font-size: 20px;
+    padding: 5px;
+  }
 `;
 
 export const Text = styled.p`

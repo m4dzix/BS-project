@@ -13,6 +13,10 @@ export const Square = styled.div`
   z-index: 1;
   @media (max-width: 767px) {
     transform: scale(0.8);
+    padding: 15px;
+  }
+  @media (max-width: 420px) {
+    display: none;
   }
 `;
 export const Text = styled.p`

@@ -8,9 +8,10 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.mainColor};
   justify-content: center;
   align-items: center;
-  position: relative;
-  float: right;
-  z-index: 1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
   @media (max-width: 767px) {
     display: flex;
   }

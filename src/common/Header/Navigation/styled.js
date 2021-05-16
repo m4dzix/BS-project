@@ -19,6 +19,7 @@ export const Nav = styled.nav`
     top: 0;
     background-color: ${({ theme }) => theme.colors.background};
     padding: 80px 0px 40px;
+    z-index: 1;
     ${(props) =>
       props.hide &&
       css`
