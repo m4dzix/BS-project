@@ -16,9 +16,13 @@ export const Wrapper = styled.div`
     props.vertical &&
     css`
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
+      @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
     `}
   @media (max-width: 767px) {
     margin-top: 10px;
@@ -49,7 +53,14 @@ export const StyledSlider = styled.div`
       height: 60vh;
       grid-template-rows: 0.9fr 0.7fr 0.4fr 1fr;
       grid-template-columns: 1fr 1fr;
+      @media (max-width: 767px) {
+        grid-template-columns: 0.9fr 0.7fr 0.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        height: 40vh;
+      }
     `}
+
   @media (max-width: 767px) {
     grid-template-columns: 0.9fr 0.7fr 1fr;
 
@@ -100,5 +111,8 @@ export const SubpageInformation = styled.h3`
       padding: 10px;
       margin: 20px;
       border-left: 15px solid ${({ theme }) => theme.colors.mainColor};
+      @media (max-width: 767px) {
+        font-size: 50px;
+      }
     `}
 `;
