@@ -3,10 +3,15 @@ import styled, { css } from "styled-components";
 export const StyledArticle = styled.article`
   display: grid;
   grid-gap: 0 20px;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   margin: 20px;
   padding: 20px;
+  align-items: end;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+    margin: 15px 0;
+    padding: 0px;
+  }
 `;
 export const Text = styled.p`
   font-size: 22px;
@@ -26,6 +31,12 @@ export const Text = styled.p`
       grid-row-end: 2;
       grid-row-start: 1;
     `}
+  @media (max-width: 767px) {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    text-align: justify;
+  }
 `;
 export const Image = styled.div`
   background: linear-gradient(white, transparent), url(${(props) => props.foto});
