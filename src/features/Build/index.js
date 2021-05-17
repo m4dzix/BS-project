@@ -3,7 +3,8 @@ import Slider from "../../common/Slider";
 import { Section } from "../../common/Section";
 import Article from "./Article";
 import { toGallery } from "../../routes";
-import { StyledLink } from "./styled";
+import { StyledLink, ArrowRight } from "./styled";
+
 const Build = () => (
   <>
     {" "}
@@ -14,7 +15,9 @@ const Build = () => (
         <>
           <Article />
           <Article second={true} />
-          <StyledLink to={toGallery()}>See gallery</StyledLink>
+          <StyledLink to={toGallery()}>
+            Galerie <ArrowRight />
+          </StyledLink>
         </>
       }
     />
