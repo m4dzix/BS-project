@@ -5,6 +5,9 @@ export const StyledSection = styled.section`
   flex-direction: column;
   padding: 20px;
   margin-top: 30px;
+  @media (max-width: 767px) {
+    margin-top: 0px;
+  }
 `;
 
 export const Title = styled.h2`
