@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { StyledArticle, Wrapper, Title, Button } from "./styled";
+import {
+  StyledArticle,
+  Wrapper,
+  Title,
+  Button,
+  ChevronDownStyled,
+} from "./styled";
 
 export const Article = ({ title, body }) => {
   const [hide, setHide] = useState(false);
@@ -7,7 +13,9 @@ export const Article = ({ title, body }) => {
   return (
     <StyledArticle>
       <Title>
-        <Button onClick={toggleHide}>+</Button>
+        <Button onClick={toggleHide}>
+          <ChevronDownStyled hide={hide} />
+        </Button>
         {title}
       </Title>
       {hide ? <Wrapper>{body}</Wrapper> : null}
