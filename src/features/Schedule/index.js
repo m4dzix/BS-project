@@ -4,7 +4,7 @@ import { Article } from "./Article";
 import Tile from "./Tile/index";
 import { meetingSchedule } from "./meetingShedule";
 import Slider from "../../common/Slider";
-import Localization from "./Map";
+import Localization from "./Localization";
 
 const Schedule = () => {
   return (
