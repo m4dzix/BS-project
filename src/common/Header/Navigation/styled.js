@@ -18,13 +18,15 @@ export const Nav = styled.nav`
     left: auto;
     right: 0;
     top: 0;
+    transition: 0.5s;
     background-color: ${({ theme }) => theme.colors.background};
     padding: 80px 0px 40px;
     z-index: 1;
+    position: fixed;
     ${(props) =>
       props.hide &&
       css`
-        display: none;
+        right: -300px;
       `}
   }
 `;
