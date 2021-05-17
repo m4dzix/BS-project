@@ -13,7 +13,7 @@ const Header = () => {
       <Logo />
       <MenuHamburger toggleHide={toggleHide} />
       <Title title={"Lorem ipsum dolor"} />
-      <Navigation hide={hide} />
+      <Navigation hide={hide} toggleHide={toggleHide} />
     </StyledHeader>
   );
 };

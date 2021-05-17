@@ -2,18 +2,24 @@ import React from "react";
 import { Nav, List, StyledNavLink } from "./styled";
 import { toSchedule, toAboutUs, toBuild } from "../../../routes";
 
-const Navigation = ({ hide }) => {
+const Navigation = ({ hide, toggleHide }) => {
   return (
     <Nav hide={hide}>
       <List>
         <li>
-          <StyledNavLink to={toSchedule()}>Lorem</StyledNavLink>
+          <StyledNavLink to={toSchedule()} onClick={toggleHide}>
+            Lorem
+          </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to={toAboutUs()}>Lorem ipsum</StyledNavLink>
+          <StyledNavLink to={toAboutUs()} onClick={toggleHide}>
+            Lorem ipsum
+          </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to={toBuild()}>Ipsum dolor</StyledNavLink>
+          <StyledNavLink to={toBuild()} onClick={toggleHide}>
+            Ipsum dolor
+          </StyledNavLink>
         </li>
         <li>
           <StyledNavLink
