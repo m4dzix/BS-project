@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Logo />
-      <MenuHamburger toggleHide={toggleHide} />
+      <MenuHamburger hide={hide} toggleHide={toggleHide} />
       <Title title={"Lorem ipsum dolor"} />
       <Navigation hide={hide} toggleHide={toggleHide} />
     </StyledHeader>
