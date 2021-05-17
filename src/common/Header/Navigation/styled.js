@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   left: 0;
   @media (max-width: 1200px) {
     padding-left: 100px;
+    position: relative;
   }
   @media (max-width: 767px) {
     width: 300px;
