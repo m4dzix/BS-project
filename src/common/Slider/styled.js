@@ -24,6 +24,7 @@ export const Wrapper = styled.div`
         align-items: flex-start;
       }
     `}
+
   @media (max-width: 767px) {
     margin-top: 10px;
   }
@@ -109,10 +110,12 @@ export const SubpageInformation = styled.h3`
       max-width: 450px;
       height: 200px;
       padding: 10px;
-      margin: 20px;
+      margin: 0 20px;
       border-left: 15px solid ${({ theme }) => theme.colors.mainColor};
       @media (max-width: 767px) {
         font-size: 50px;
+        margin: 20px;
+        height: auto;
       }
     `}
 `;
