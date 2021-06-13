@@ -4,7 +4,7 @@ export const StyledTile = styled.div`
   display: grid;
   grid-gap: 30px;
   justify-content: center;
-  box-shadow: 1px 2px 3px 4px ${({ theme }) => theme.colors.text};
+  box-shadow: 1px 2px 3px 4px ${({ theme }) => theme.colors.hover};
   padding: 50px;
   transition: 0.3s;
   &:hover {
