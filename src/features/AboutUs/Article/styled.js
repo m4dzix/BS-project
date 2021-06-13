@@ -4,6 +4,7 @@ export const Text = styled.p`
   font-size: 22px;
   line-height: 1.5;
   letter-spacing: 1.2;
+  padding: 20px;
   margin-bottom: 100px;
   width: 70%;
   @media (max-width: 767px) {
