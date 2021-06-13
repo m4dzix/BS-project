@@ -44,4 +44,5 @@ export const Image = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   height: 250px;
+  border-radius: 5px;
 `;

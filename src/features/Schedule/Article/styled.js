@@ -11,6 +11,7 @@ export const Title = styled.h4`
   grid-column-start: 1;
   grid-column-end: -1;
   font-size: 30px;
+  border-radius: 5px;
   color: ${({ theme }) => theme.colors.text};
   background-color: ${({ theme }) => theme.colors.mainColor};
   width: calc(100% + 60px);

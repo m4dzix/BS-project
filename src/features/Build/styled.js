@@ -10,6 +10,7 @@ export const StyledLink = styled(Link)`
   margin: 30px;
   margin-left: 0;
   text-align: center;
+  border-radius: 5px;
   &:hover {
     letter-spacing: 3px;
   }
