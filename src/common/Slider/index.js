@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Wrapper,
   SubpageInformation,
   StyledSlider,
   InformationField,
@@ -10,11 +9,12 @@ import {
 import { arrayImages } from "./images/arrayImages";
 
 const Slider = ({ vertical, inset }) => (
-  <Wrapper vertical={vertical}>
-    <StyledSlider vertical={vertical}>
+  <>
+    <StyledSlider>
       {arrayImages.map((image) => (
-        <Foto key={image} foto={image}></Foto>
+        <Foto vertical={vertical} key={image} foto={image}></Foto>
       ))}
+      <SubpageInformation vertical={vertical}>{inset}</SubpageInformation>
     </StyledSlider>
     <InformationField vertical={vertical}>
       <Text>
@@ -24,8 +24,7 @@ const Slider = ({ vertical, inset }) => (
         voluptua.
       </Text>
     </InformationField>
-    <SubpageInformation vertical={vertical}>{inset}</SubpageInformation>
-  </Wrapper>
+  </>
 );
 
 export default Slider;

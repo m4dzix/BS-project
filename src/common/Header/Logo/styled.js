@@ -10,7 +10,7 @@ export const Square = styled.div`
   align-items: center;
   position: absolute;
   top: 10px;
-  z-index: 1;
+  z-index: 2;
   @media (max-width: 767px) {
     transform: scale(0.8);
     padding: 15px;
