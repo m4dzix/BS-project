@@ -5,12 +5,14 @@ import Tile from "./Tile/index";
 import { meetingSchedule } from "./meetingShedule";
 import Slider from "../../common/Slider";
 import Localization from "./Localization";
+import Introduction from "./Introduction";
 
 const Schedule = () => {
   return (
     <>
       <Slider />
-      <Localization />
+      <Section title={"Lorem Ipsum dolor sit amount"} body={<Introduction />} />
+      <Section title={"Localization"} body={<Localization />} />
       <Section
         title={"Zusammenkünfte"}
         body={meetingSchedule.map((meetings) => (
