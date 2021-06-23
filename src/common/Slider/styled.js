@@ -42,12 +42,15 @@ export const StyledSlider = styled.div`
 
   @media (max-width: 767px) {
     grid-template-columns: 0.9fr 0.7fr 1fr;
-
+    border-width: 3px;
     ${Foto}:nth-child(2) {
       border-bottom: none;
     }
+    ${Foto}:nth-child(1) {
+      border-width: 10px;
+    }
     ${Foto}:nth-child(6) {
-      border-right: 15px solid ${({ theme }) => theme.colors.mainColor};
+      border-width: 10px;
     }
   }
 `;
