@@ -26,7 +26,7 @@ export const Foto = styled.div`
       background-repeat: no-repeat;
     `}
 `;
-export const StyledSlider = styled.div`
+export const StyledBanner = styled.div`
   position: relative;
   height: 40vh;
   border: 5px solid ${({ theme }) => theme.colors.text};

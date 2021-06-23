@@ -3,14 +3,14 @@ import { Section } from "../../common/Section";
 import { Article } from "./Article";
 import Tile from "./Tile/index";
 import { meetingSchedule } from "./meetingShedule";
-import Slider from "../../common/Slider";
+import Banner from "../../common/Banner";
 import Localization from "./Localization";
 import Introduction from "./Introduction";
 
 const Schedule = () => {
   return (
     <>
-      <Slider />
+      <Banner />
       <Section title={"Lorem Ipsum dolor sit amount"} body={<Introduction />} />
       <Section title={"Localization"} body={<Localization />} />
       <Section

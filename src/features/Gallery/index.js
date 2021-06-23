@@ -1,7 +1,7 @@
 import React from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
-import Slider from "../../common/Slider";
+import Banner from "../../common/Banner";
 import { Section } from "../../common/Section";
 
 const images = [
@@ -22,7 +22,7 @@ const images = [
 const Gallery = () => {
   return (
     <>
-      <Slider vertical={true} inset={`Lorem Dolorsed diam nonumy `} />
+      <Banner vertical={true} inset={`Lorem Dolorsed diam nonumy `} />
       <Section
         title={"Lorem ipsum dolor "}
         body={images ? <ImageGallery items={images} /> : null}

@@ -1,21 +1,21 @@
 import React from "react";
 import {
   SubpageInformation,
-  StyledSlider,
+  StyledBanner,
   InformationField,
   Text,
   Foto,
 } from "./styled";
 import { arrayImages } from "./images/arrayImages";
 
-const Slider = ({ vertical, inset }) => (
+const Banner = ({ vertical, inset }) => (
   <>
-    <StyledSlider>
+    <StyledBanner>
       {arrayImages.map((image) => (
         <Foto vertical={vertical} key={image} foto={image}></Foto>
       ))}
       <SubpageInformation vertical={vertical}>{inset}</SubpageInformation>
-    </StyledSlider>
+    </StyledBanner>
     <InformationField vertical={vertical}>
       <Text>
         {" "}
@@ -27,4 +27,4 @@ const Slider = ({ vertical, inset }) => (
   </>
 );
 
-export default Slider;
+export default Banner;

@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../../common/Slider";
+import Banner from "../../common/Banner";
 import { Section } from "../../common/Section";
 import Article from "./Article";
 import { toGallery } from "../../routes";
@@ -8,7 +8,7 @@ import { StyledLink, ArrowRight } from "./styled";
 const Build = () => (
   <>
     {" "}
-    <Slider vertical={true} inset={`scing elitr, sed diam nonumy `} />
+    <Banner vertical={true} inset={`scing elitr, sed diam nonumy `} />
     <Section
       title={"Lorem Ipsum Dolor"}
       body={

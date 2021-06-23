@@ -1,12 +1,12 @@
 import React from "react";
 import { Section } from "../../common/Section";
-import Slider from "../../common/Slider";
+import Banner from "../../common/Banner";
 import Article from "./Article";
 
 const AboutUs = () => {
   return (
     <>
-      <Slider vertical={true} inset={"Lorem Ipsumdolor sit"} />
+      <Banner vertical={true} inset={"Lorem Ipsumdolor sit"} />
       <Section
         title={"Lorem ipsum dolor sit amount"}
         body={<Article />}

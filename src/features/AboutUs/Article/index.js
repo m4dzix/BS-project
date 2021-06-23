@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../common/Slider/images/foto5.jpg";
+import image from "../../../common/Banner/images/foto5.jpg";
 import { Text, Image } from "./styled";
 
 const Article = () => (
