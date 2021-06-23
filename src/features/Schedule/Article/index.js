@@ -8,7 +8,7 @@ import {
 } from "./styled";
 
 export const Article = ({ title, body }) => {
-  const [hide, setHide] = useState(false);
+  const [hide, setHide] = useState(true);
   const toggleHide = () => setHide(!hide);
   return (
     <StyledArticle>
@@ -18,7 +18,7 @@ export const Article = ({ title, body }) => {
         </Button>
         {title}
       </Title>
-      {hide ? <Wrapper>{body}</Wrapper> : null}
+      <Wrapper hide={hide}>{body}</Wrapper>
     </StyledArticle>
   );
 };

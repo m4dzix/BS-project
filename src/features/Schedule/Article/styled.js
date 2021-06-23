@@ -38,12 +38,21 @@ export const ChevronDownStyled = styled(ChevronDown)`
     `}
 `;
 export const Wrapper = styled.div`
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.5s ease;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  transition: 0.3s;
-  transition: 0.5s;
   @media (max-width: 767px) {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
+  ${(props) =>
+    props.hide &&
+    css`
+      height: 0;
+      overflow: hidden;
+      transform: scaleY(0);
+    `}
 `;
