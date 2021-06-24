@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Square = styled.div`
+export const SquareLink = styled(Link)`
   width: 100px;
   height: 100px;
   padding: 30px;
@@ -11,6 +12,10 @@ export const Square = styled.div`
   position: absolute;
   top: 10px;
   z-index: 2;
+  &:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+  }
   @media (max-width: 767px) {
     transform: scale(0.8);
     padding: 15px;

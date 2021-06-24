@@ -1,10 +1,11 @@
 import React from "react";
-import { Square, Text } from "./styled";
+import { SquareLink, Text } from "./styled";
+import { toSchedule } from "../../../routes";
 
 const Logo = () => (
-  <Square>
+  <SquareLink to={toSchedule()}>
     <Text>JZ</Text>
-  </Square>
+  </SquareLink>
 );
 
 export default Logo;
