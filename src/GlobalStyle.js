@@ -12,7 +12,8 @@ html{
 body {
   margin: 0;
   padding: 0;
-    background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
+  color:${({ theme }) => theme.colors.text}
 }
 a{
   color: inherit;
