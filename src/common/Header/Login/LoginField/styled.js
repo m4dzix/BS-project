@@ -13,20 +13,24 @@ export const Overlay = styled.div`
       height: 100%;
       background-color: #0009;
       z-index: 4;
-      display: grid;
+      display: flex;
       align-items: center;
       justify-content: center;
     `}
 `;
 export const Form = styled.form`
-  width: 600px;
-  height: 300px;
+  width: 90%;
+  max-width: 600px;
   background-color: ${({ theme }) => theme.colors.mainColor};
   display: grid;
+  grid-gap: 10px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   position: relative;
+  @media (max-width: 767px) {
+    padding: 5px;
+  }
 `;
 export const XIcon = styled(X)`
   position: absolute;
@@ -48,13 +52,30 @@ export const Text = styled.p`
     css`
       color: red;
       font-size: 20px;
+      margin-bottom: 10px;
     `}
+  @media (max-width: 767px) {
+    font-size: 25px;
+    ${(props) =>
+      props.IncorrectData &&
+      css`
+        font-size: 18px;
+      `}
+  }
 `;
 export const Label = styled.label`
   font-size: 25px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    text-align: start;
+  }
+  @media (max-width: 340px) {
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+  }
 `;
 export const Input = styled.input`
   ${(props) =>
