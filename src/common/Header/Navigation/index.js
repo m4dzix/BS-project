@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, List, StyledNavLink } from "./styled";
-import { toSchedule, toAboutUs, toBuild } from "../../../routes";
+import { toSchedule, toAboutUs, toBuild, toBooking } from "../../../routes";
 
 const Navigation = ({ hide, toggleHide }) => {
   return (
@@ -19,6 +19,11 @@ const Navigation = ({ hide, toggleHide }) => {
         <li>
           <StyledNavLink to={toBuild()} onClick={toggleHide}>
             Ipsum dolor
+          </StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink to={toBooking()} onClick={toggleHide}>
+            Ipsum
           </StyledNavLink>
         </li>
         <li>

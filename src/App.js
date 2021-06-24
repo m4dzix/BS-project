@@ -2,11 +2,12 @@ import Header from "./common/Header/index";
 import Main from "./common/Main/index";
 import Footer from "./common/Footer/index";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
-import { toSchedule, toAboutUs, toBuild, toGallery } from "./routes";
+import { toSchedule, toAboutUs, toBuild, toGallery, toBooking } from "./routes";
 import Schedule from "./features/Schedule";
 import AboutUs from "./features/AboutUs";
 import Gallery from "./features/Gallery";
 import Build from "./features/Build";
+import Booking from "./features/Booking";
 
 function App() {
   return (
@@ -26,12 +27,15 @@ function App() {
           <Route path={toGallery()}>
             <Gallery />
           </Route>
+          <Route path={toBooking()}>
+            <Booking />
+          </Route>
           <Route path="/">
             <Redirect to={toSchedule()}></Redirect>
           </Route>
         </Switch>
-        <Footer />
       </Main>
+      <Footer />
     </HashRouter>
   );
 }

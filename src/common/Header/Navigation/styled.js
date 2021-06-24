@@ -34,7 +34,7 @@ export const Nav = styled.nav`
 
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   list-style: none;
   max-width: calc(1200px - 200px);
   margin: 0 auto;
