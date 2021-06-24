@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Overlay, Form, XIcon, Text, Label, Input, Button } from "./styled";
 
 const LoginField = ({ show, toggleShow }) => {
+  const inputRef = useRef(null);
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [IncorrectData, setIncorrectData] = useState(false);
@@ -14,6 +15,7 @@ const LoginField = ({ show, toggleShow }) => {
       setLogin("");
       setPassword("");
       setIncorrectData(true);
+      inputRef.current.focus();
     }
   };
 
@@ -26,6 +28,7 @@ const LoginField = ({ show, toggleShow }) => {
           Login:{" "}
           <Input
             IncorrectData={IncorrectData}
+            ref={inputRef}
             value={login}
             onChange={({ target }) => setLogin(target.value)}
             name="login"
