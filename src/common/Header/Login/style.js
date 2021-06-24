@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { User } from "@styled-icons/heroicons-outline/User";
 
 export const LoginStyled = styled.button`
   position: absolute;
@@ -18,4 +19,8 @@ export const Text = styled.p`
   font-size: 25px;
   letter-spacing: 1px;
   margin-right: 5px;
+`;
+export const UserIcon = styled(User)`
+  width: 30px;
+  margin-top: -8px;
 `;

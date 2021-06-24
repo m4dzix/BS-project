@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LoginStyled, Text } from "./style";
+import { LoginStyled, Text, UserIcon } from "./style";
 import LoginField from "./LoginField";
 
 const Login = () => {
@@ -9,7 +9,7 @@ const Login = () => {
     <>
       <LoginStyled onClick={toggleShow}>
         <Text>Login</Text>
-        <div>Q</div>
+        <UserIcon />
       </LoginStyled>
       <LoginField show={show} toggleShow={toggleShow} />
     </>
