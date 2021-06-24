@@ -4,14 +4,17 @@ import { Overlay, Form, Text, Label, Input, Button } from "./styled";
 const LoginField = ({ show, toggleShow }) => {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
-  console.log(show);
+  const [IncorrectData, setIncorrectData] = useState(false);
   const onFormSubmit = (event) => {
     event.preventDefault();
-    if (login === "Admin") {
+    if (login === "Admin" && password === "123") {
       toggleShow();
       console.log("Udało się !");
+    } else {
+      setLogin("");
+      setPassword("");
+      setIncorrectData(true);
     }
-    return show;
   };
 
   return (
@@ -21,6 +24,7 @@ const LoginField = ({ show, toggleShow }) => {
         <Label>
           Login:{" "}
           <Input
+            IncorrectData={IncorrectData}
             value={login}
             onChange={({ target }) => setLogin(target.value)}
             name="login"
@@ -30,6 +34,7 @@ const LoginField = ({ show, toggleShow }) => {
         <Label>
           Password:
           <Input
+            IncorrectData={IncorrectData}
             value={password}
             onChange={({ target }) => setPassword(target.value)}
             name="password"
@@ -38,6 +43,9 @@ const LoginField = ({ show, toggleShow }) => {
           />
         </Label>
         <Button>Log in</Button>
+        <Text IncorrectData={IncorrectData}>
+          {IncorrectData ? " Wrong login or password" : null}
+        </Text>
       </Form>
     </Overlay>
   );

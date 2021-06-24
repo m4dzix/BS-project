@@ -30,6 +30,12 @@ export const Text = styled.p`
   font-size: 30px;
   text-align: center;
   margin-bottom: 0;
+  ${(props) =>
+    props.IncorrectData &&
+    css`
+      color: red;
+      font-size: 20px;
+    `}
 `;
 export const Label = styled.label`
   font-size: 25px;
@@ -37,7 +43,13 @@ export const Label = styled.label`
   display: grid;
   grid-template-columns: 1fr 2fr;
 `;
-export const Input = styled.input``;
+export const Input = styled.input`
+  ${(props) =>
+    props.IncorrectData &&
+    css`
+      border-color: red;
+    `}
+`;
 export const Button = styled.button`
   width: 100px;
   height: 35px;
