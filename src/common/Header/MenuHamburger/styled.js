@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Button = styled.button`
   display: none;
@@ -7,10 +7,15 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.mainColor};
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   z-index: 2;
+  ${(props) =>
+    props.hide &&
+    css`
+      position: absolute;
+    `}
   @media (max-width: 767px) {
     display: flex;
   }
