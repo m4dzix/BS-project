@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LoginStyled, Text, UserIcon } from "./style";
+import { LoginStyled, Text, UserIcon } from "./styled";
 import LoginField from "./LoginField";
 
 const Login = () => {
