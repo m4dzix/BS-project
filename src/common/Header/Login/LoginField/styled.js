@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { X } from "@styled-icons/heroicons-solid/X";
 
 export const Overlay = styled.div`
   display: none;
@@ -25,6 +26,18 @@ export const Form = styled.form`
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  position: relative;
+`;
+export const XIcon = styled(X)`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  &:hover {
+    transform: scale(1.3);
+    color: ${({ theme }) => theme.colors.hover};
+  }
 `;
 export const Text = styled.p`
   font-size: 30px;

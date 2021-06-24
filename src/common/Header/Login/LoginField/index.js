@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Overlay, Form, Text, Label, Input, Button } from "./styled";
+import { Overlay, Form, XIcon, Text, Label, Input, Button } from "./styled";
 
 const LoginField = ({ show, toggleShow }) => {
   const [login, setLogin] = useState("");
@@ -20,6 +20,7 @@ const LoginField = ({ show, toggleShow }) => {
   return (
     <Overlay show={show}>
       <Form onSubmit={onFormSubmit}>
+        <XIcon onClick={toggleShow} />
         <Text>Zaloguj się</Text>
         <Label>
           Login:{" "}
