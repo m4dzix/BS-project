@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Article = styled.article`
   display: grid;
@@ -20,7 +21,7 @@ export const See = styled.div`
   transition: 0.5s;
   font-weight: bold;
 `;
-export const Link = styled.div`
+export const StyledLink = styled(Link)`
   background: url(${(props) => props.foto});
   background-size: cover;
   background-position: center;
