@@ -10,7 +10,7 @@ export const Button = styled.button`
   position: fixed;
   right: 10px;
   top: 10px;
-  z-index: 2;
+  z-index: 3;
   ${(props) =>
     props.hide &&
     css`
