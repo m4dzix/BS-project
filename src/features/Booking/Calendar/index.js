@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Container, StyledCalendar, Form, Input, Button } from "./styled";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Calendar = ({ src, googleCalendarId, apartment }) => {
-  const [newPerson, setNewPerson] = useState("Name");
+  const { user } = useAuth0();
+  const [newPerson, setNewPerson] = useState(user.name);
   const [secondPerson, setSecondPerson] = useState("Name");
   const [date, setDate] = useState("Date");
   const [startTime, setStartTime] = useState("Start");
