@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  SubpageInformation,
-  StyledBanner,
-  InformationField,
-  Text,
-  Foto,
-} from "./styled";
+import { Subpage, StyledBanner, InformationField, Text, Foto } from "./styled";
 import { arrayImages } from "./images/arrayImages";
 
 const Banner = ({ vertical, inset }) => (
@@ -14,7 +8,7 @@ const Banner = ({ vertical, inset }) => (
       {arrayImages.map((image) => (
         <Foto vertical={vertical} key={image} foto={image}></Foto>
       ))}
-      <SubpageInformation vertical={vertical}>{inset}</SubpageInformation>
+      <Subpage vertical={vertical}>{inset}</Subpage>
     </StyledBanner>
     <InformationField vertical={vertical}>
       <Text>

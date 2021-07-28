@@ -22,7 +22,7 @@ export const Nav = styled.nav`
     transition: 0.5s;
     background-color: ${({ theme }) => theme.colors.background};
     padding: 80px 0px 40px;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     ${(props) =>
       props.hide &&

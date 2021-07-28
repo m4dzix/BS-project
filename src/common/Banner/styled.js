@@ -81,7 +81,7 @@ export const Text = styled.p`
   animation: ${marquee} 30s linear infinite;
 `;
 
-export const SubpageInformation = styled.h3`
+export const Subpage = styled.h3`
   display: none;
   ${(props) =>
     props.vertical &&
@@ -92,7 +92,7 @@ export const SubpageInformation = styled.h3`
       position: absolute;
       bottom: 0px;
       right: 0px;
-
+      margin-right: 30px;
       font-size: 60px;
       max-width: 450px;
       @media (max-width: 767px) {

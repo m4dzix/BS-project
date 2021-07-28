@@ -1,5 +1,6 @@
 import Header from "./common/Header/index";
 import Main from "./common/Main/index";
+import Footer from "./common/Footer/index";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import { toSchedule, toAboutUs, toBuild, toGallery } from "./routes";
 import Schedule from "./features/Schedule";
@@ -29,6 +30,7 @@ function App() {
             <Redirect to={toSchedule()}></Redirect>
           </Route>
         </Switch>
+        <Footer />
       </Main>
     </HashRouter>
   );

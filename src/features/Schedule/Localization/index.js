@@ -22,6 +22,10 @@ export const Localization = () => {
         <Value>
           <a href="tel:+49 531 86671515">+49 531 86671515</a>
         </Value>
+        <Key>E-mail adresse:</Key>
+        <Value>
+          <a href="mailto: jz-bs@online.de">jz-bs@online.de</a>
+        </Value>
       </List>
     </StyledLocalization>
   );

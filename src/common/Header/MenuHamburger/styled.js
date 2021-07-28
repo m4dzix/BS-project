@@ -1,15 +1,21 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Button = styled.button`
   display: none;
-  width: 50px;
-  height: 50px;
-  background-color: ${({ theme }) => theme.colors.white};
-  border: none;
-  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: ${({ theme }) => theme.colors.mainColor};
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   right: 10px;
-  top: 20px;
-  z-index: 2;
+  top: 10px;
+  z-index: 3;
+  ${(props) =>
+    props.hide &&
+    css`
+      position: absolute;
+    `}
   @media (max-width: 767px) {
     display: flex;
   }
