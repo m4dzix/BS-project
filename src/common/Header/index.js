@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import Title from "./Title";
 import { StyledHeader } from "./styled";
 import MenuHamburger from "./MenuHamburger";
-import LoginButton from "../LoginButton";
+import LoginButton from "./LoginButton";
 
 const Header = () => {
   const [hide, setHide] = useState(true);
