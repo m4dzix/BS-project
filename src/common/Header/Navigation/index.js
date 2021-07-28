@@ -1,8 +1,10 @@
 import React from "react";
 import { Nav, List, StyledNavLink } from "./styled";
 import { toSchedule, toAboutUs, toBuild, toBooking } from "../../../routes";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navigation = ({ hide, toggleHide }) => {
+  const { isAuthenticated } = useAuth0();
   return (
     <Nav hide={hide}>
       <List>
@@ -21,11 +23,13 @@ const Navigation = ({ hide, toggleHide }) => {
             Ipsum dolor
           </StyledNavLink>
         </li>
-        <li>
-          <StyledNavLink to={toBooking()} onClick={toggleHide}>
-            Ipsum
-          </StyledNavLink>
-        </li>
+        {isAuthenticated ? (
+          <li>
+            <StyledNavLink to={toBooking()} onClick={toggleHide}>
+              Ipsum
+            </StyledNavLink>
+          </li>
+        ) : null}
         <li>
           <StyledNavLink
             as="a"
