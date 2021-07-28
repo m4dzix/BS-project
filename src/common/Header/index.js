@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "./Logo";
 import Navigation from "./Navigation";
 import Title from "./Title";
 import { StyledHeader } from "./styled";
@@ -11,6 +12,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
+      <Logo />
       <LoginButton />
       <MenuHamburger hide={hide} toggleHide={toggleHide} />
       <Title title={"Lorem ipsum dolor"} />
