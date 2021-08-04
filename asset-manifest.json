@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/BS-project/static/js/main.bff7c7ea.chunk.js",
-    "main.js.map": "/BS-project/static/js/main.bff7c7ea.chunk.js.map",
+    "main.js": "/BS-project/static/js/main.de7f6a21.chunk.js",
+    "main.js.map": "/BS-project/static/js/main.de7f6a21.chunk.js.map",
     "runtime-main.js": "/BS-project/static/js/runtime-main.fa9f24e9.js",
     "runtime-main.js.map": "/BS-project/static/js/runtime-main.fa9f24e9.js.map",
     "static/css/2.ea11fe1c.chunk.css": "/BS-project/static/css/2.ea11fe1c.chunk.css",
@@ -19,12 +19,13 @@
     "static/media/foto5.d67d10f3.jpg": "/BS-project/static/media/foto5.d67d10f3.jpg",
     "static/media/foto6.30d47819.jpg": "/BS-project/static/media/foto6.30d47819.jpg",
     "static/media/foto7.ec6df721.jpg": "/BS-project/static/media/foto7.ec6df721.jpg",
-    "static/media/foto8.ecca4e59.jpg": "/BS-project/static/media/foto8.ecca4e59.jpg"
+    "static/media/foto8.ecca4e59.jpg": "/BS-project/static/media/foto8.ecca4e59.jpg",
+    "static/media/signLanguage.db7a7f59.png": "/BS-project/static/media/signLanguage.db7a7f59.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fa9f24e9.js",
     "static/css/2.ea11fe1c.chunk.css",
     "static/js/2.e12933d4.chunk.js",
-    "static/js/main.bff7c7ea.chunk.js"
+    "static/js/main.de7f6a21.chunk.js"
   ]
 }
