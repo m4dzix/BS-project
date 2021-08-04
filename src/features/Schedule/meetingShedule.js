@@ -1,3 +1,4 @@
+import icon from "../../common/Assets/signLanguage.png";
 export const meetingSchedule = [
   {
     type: "German",
@@ -72,10 +73,12 @@ export const meetingSchedule = [
     ],
   },
   {
-    type: "Gebärdensprache",
+    type: `Gebärdensprache `,
+    icon: icon,
     details: [
       {
-        name: "Deutsche Gebärdensprache",
+        name: `Deutsche Gebärdensprache`,
+        icon: icon,
         language: "Deutsche Gebärdensprache",
         day: ["Freitag", "Sonntag"],
         time: ["18:45 Uhr - 20:30 Uhr", "10:00 Uhr - 12:00 Uhr"],

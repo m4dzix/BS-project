@@ -1,9 +1,20 @@
 import React from "react";
-import { StyledTile, Name, Language, List, Key, Value } from "./styled.js";
+import {
+  StyledTile,
+  Name,
+  Language,
+  List,
+  Key,
+  Value,
+  Icon,
+} from "./styled.js";
 
-const Tile = ({ hidden, name, language, day, time }) => (
+const Tile = ({ hidden, name, language, day, icon, time }) => (
   <StyledTile>
-    <Name>{name}</Name>
+    <Name>
+      {name}
+      {!!icon ? <Icon src={icon} alt="sign" /> : null}
+    </Name>
     <Language hidden={hidden}>{language}</Language>
     <List>
       <Key>{day[0]}:</Key>

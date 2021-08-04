@@ -5,11 +5,13 @@ import {
   Title,
   Button,
   ChevronDownStyled,
+  Icon,
 } from "./styled";
 
-export const Article = ({ title, body }) => {
+export const Article = ({ title, icon, body }) => {
   const [hide, setHide] = useState(true);
   const toggleHide = () => setHide(!hide);
+  console.log(icon);
   return (
     <StyledArticle>
       <Title>
@@ -17,6 +19,7 @@ export const Article = ({ title, body }) => {
           <ChevronDownStyled hide={hide} />
         </Button>
         {title}
+        {!!icon ? <Icon src={icon} alt={icon} /> : null}
       </Title>
       <Wrapper hide={hide}>{body}</Wrapper>
     </StyledArticle>

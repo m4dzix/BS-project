@@ -17,7 +17,7 @@ export const StyledTile = styled.div`
 `;
 export const Name = styled.h3`
   margin: 0;
-  font-size: 28px;
+  font-size: 25px;
   ${({ theme }) => theme.colors.text};
   @media (max-width: 767px) {
     font-size: 20px;
@@ -54,4 +54,10 @@ export const Value = styled.dd`
   @media (max-width: 767px) {
     font-size: 13px;
   }
+`;
+export const Icon = styled.img`
+  width: 35px;
+  height: 35px;
+  transform: translateY(5px);
+  margin-left: 5px;
 `;

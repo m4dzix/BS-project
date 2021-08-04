@@ -19,10 +19,12 @@ const Schedule = () => {
           <Article
             key={meetings.type}
             title={meetings.type}
+            icon={meetings.icon}
             body={meetings.details.map((meeting) => (
               <Tile
                 key={meeting.name}
                 name={meeting.name}
+                icon={meeting.icon}
                 hidden={true}
                 day={meeting.day}
                 time={meeting.time}
