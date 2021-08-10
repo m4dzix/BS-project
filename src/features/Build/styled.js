@@ -12,7 +12,7 @@ export const StyledLink = styled(Link)`
   text-align: center;
   border-radius: 5px;
   width: 300px;
-  align-self: flex-end;
+  align-self: end;
   &:hover {
     filter: brightness(1.5);
     transform: scale(1.1);
