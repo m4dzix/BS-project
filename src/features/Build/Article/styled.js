@@ -35,7 +35,6 @@ export const Text = styled.p`
     grid-column-start: 1;
     grid-row-start: 1;
     text-align: justify;
-    font-size: 20px;
     padding: 10px;
   }
 `;
