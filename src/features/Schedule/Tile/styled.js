@@ -60,4 +60,8 @@ export const Icon = styled.img`
   height: 35px;
   transform: translateY(5px);
   margin-left: 5px;
+  @media (max-width: 767px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
