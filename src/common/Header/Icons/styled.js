@@ -7,5 +7,4 @@ export const StyledIcons = styled.div`
   height: 50px;
   display: flex;
   align-items: center;
-  z-index: 3;
 `;

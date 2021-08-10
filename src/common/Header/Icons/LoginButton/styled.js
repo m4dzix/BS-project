@@ -6,6 +6,7 @@ export const LoginStyled = styled.button`
   align-items: center;
   border: none;
   background-color: inherit;
+  z-index: 2;
   cursor: pointer;
   &:hover {
     color: ${({ theme }) => theme.colors.hover};

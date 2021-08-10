@@ -6,6 +6,7 @@ export const Button = styled.button`
   background-color: inherit;
   border: none;
   cursor: pointer;
+  z-index: 5;
   &:hover {
     color: ${({ theme }) => theme.colors.hover};
   }
