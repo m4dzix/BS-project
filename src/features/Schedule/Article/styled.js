@@ -24,6 +24,10 @@ export const Button = styled.button`
   width: calc(100% + 60px);
   padding: 15px 30px;
   margin: 20px -30px;
+  @media (max-width: 767px) {
+    padding: 5px 30px;
+    margin: 10px -30px;
+  }
   border: none;
 `;
 export const ChevronDownStyled = styled(ChevronDown)`
