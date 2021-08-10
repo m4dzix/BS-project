@@ -3,8 +3,7 @@ import Logo from "./Logo";
 import Navigation from "./Navigation";
 import Title from "./Title";
 import { StyledHeader } from "./styled";
-import MenuHamburger from "./MenuHamburger";
-import LoginButton from "./LoginButton";
+import Icons from "./Icons";
 
 const Header = () => {
   const [hide, setHide] = useState(true);
@@ -13,8 +12,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Logo />
-      <LoginButton />
-      <MenuHamburger hide={hide} toggleHide={toggleHide} />
+      <Icons hide={hide} toggleHide={toggleHide} />
       <Title title={"Lorem ipsum dolor"} />
       <Navigation hide={hide} toggleHide={toggleHide} />
     </StyledHeader>
