@@ -9,6 +9,7 @@ export const Text = styled.p`
   width: 70%;
   @media (max-width: 767px) {
     font-size: 20px;
+    padding: 10px;
     width: auto;
   }
 `;
