@@ -22,7 +22,7 @@ export const Nav = styled.nav`
     transition: 0.5s;
     background-color: ${({ theme }) => theme.colors.background};
     padding: 80px 0px 40px;
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     ${(props) =>
       props.hide &&
@@ -53,7 +53,6 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   activeClassName,
 }))`
   color: ${({ theme }) => theme.colors.background};
-
   font-size: 25px;
   padding: 10px;
   font-weight: bold;
@@ -69,17 +68,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   }
   @media (max-width: 767px) {
     font-size: 18px;
+    padding: 7px;
     color: ${({ theme }) => theme.colors.text};
-    font-size: 30px;
-    &:hover {
-      color: ${({ theme }) => theme.colors.text};
-    }
     &.${activeClassName} {
       color: ${({ theme }) => theme.colors.hover};
       border-left: 10px solid ${({ theme }) => theme.colors.mainColor};
-      &:hover {
-        color: ${({ theme }) => theme.colors.text};
-      }
     }
   }
 `;
