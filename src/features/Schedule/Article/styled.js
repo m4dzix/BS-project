@@ -8,27 +8,26 @@ export const StyledArticle = styled.article`
   }
 `;
 export const Title = styled.h4`
-  grid-column-start: 1;
-  grid-column-end: -1;
   font-size: 30px;
-  border-radius: 5px;
-  color: ${({ theme }) => theme.colors.text};
-  background-color: ${({ theme }) => theme.colors.mainColor};
-  width: calc(100% + 60px);
-  padding: 15px 30px;
-  margin: 20px -30px;
+  margin: 0;
+  color: ${({ theme }) => theme.colors.white};
   @media (max-width: 767px) {
     font-size: 25px;
   }
 `;
 export const Button = styled.button`
-  float: right;
-  background-color: inherit;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: ${({ theme }) => theme.colors.text};
+  width: calc(100% + 60px);
+  padding: 15px 30px;
+  margin: 20px -30px;
   border: none;
 `;
 export const ChevronDownStyled = styled(ChevronDown)`
+  float: right;
   height: 40px;
   transition: 0.5s;
   ${(props) =>
@@ -55,4 +54,11 @@ export const Wrapper = styled.div`
       overflow: hidden;
       transform: scaleY(0);
     `}
+`;
+export const Icon = styled.img`
+  width: 35px;
+  height: 35px;
+  transform: translateY(5px);
+  margin-left: 5px;
+  margin: 0;
 `;

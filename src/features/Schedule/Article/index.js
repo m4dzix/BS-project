@@ -14,13 +14,12 @@ export const Article = ({ title, icon, body }) => {
   console.log(icon);
   return (
     <StyledArticle>
-      <Title>
-        <Button onClick={toggleHide}>
-          <ChevronDownStyled hide={hide} />
-        </Button>
-        {title}
-        {!!icon ? <Icon src={icon} alt={icon} /> : null}
-      </Title>
+      <Button onClick={toggleHide}>
+        <Title>
+          {title} {!!icon ? <Icon src={icon} alt={icon} /> : null}
+        </Title>
+        <ChevronDownStyled hide={hide}></ChevronDownStyled>
+      </Button>
       <Wrapper hide={hide}>{body}</Wrapper>
     </StyledArticle>
   );
