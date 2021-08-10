@@ -14,7 +14,6 @@ export const StyledArticle = styled.article`
   }
 `;
 export const Text = styled.p`
-  font-size: 22px;
   line-height: 1.5;
   letter-spacing: 1.2;
   margin-bottom: 100px;

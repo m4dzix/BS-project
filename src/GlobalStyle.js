@@ -23,4 +23,10 @@ a{
     color: ${({ theme }) => theme.colors.hover};
   }
 }
+p {
+  font-size:20px;
+   @media (max-width: 767px) {
+    font-size:15px;
+  }
+}
 `;
