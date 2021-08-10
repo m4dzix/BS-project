@@ -10,7 +10,7 @@ export const StyledArticle = styled.article`
 export const Title = styled.h4`
   font-size: 30px;
   margin: 0;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.text};
   @media (max-width: 767px) {
     font-size: 25px;
   }
@@ -20,7 +20,7 @@ export const Button = styled.button`
   flex-direction: row;
   justify-content: space-between;
   border-radius: 5px;
-  background-color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.mainColor};
   width: calc(100% + 60px);
   padding: 15px 30px;
   margin: 20px -30px;
