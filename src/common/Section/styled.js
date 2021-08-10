@@ -18,7 +18,8 @@ export const Title = styled.h2`
   padding: 30px;
   text-transform: capitalize;
   @media (max-width: 767px) {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 10px 0 0;
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid ${({ theme }) => theme.colors.hover};
