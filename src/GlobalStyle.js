@@ -24,7 +24,7 @@ a{
   }
 }
 p {
-  font-size:20px;
+  font-size:25px;
    @media (max-width: 767px) {
     font-size:15px;
   }
