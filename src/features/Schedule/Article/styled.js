@@ -11,8 +11,9 @@ export const Title = styled.h4`
   font-size: 30px;
   margin: 0;
   color: ${({ theme }) => theme.colors.text};
+  align-self: center;
   @media (max-width: 767px) {
-    font-size: 25px;
+    font-size: 20px;
   }
 `;
 export const Button = styled.button`
@@ -65,4 +66,8 @@ export const Icon = styled.img`
   transform: translateY(5px);
   margin-left: 5px;
   margin: 0;
+  @media (max-width: 767px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
