@@ -26,8 +26,9 @@ export const Button = styled.button`
   padding: 15px 30px;
   margin: 20px -30px;
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding: 5px 30px;
-    margin: 10px -30px;
+    width: 100%;
+    padding: 5px 20px;
+    margin: 10px auto;
   }
   border: none;
 `;
