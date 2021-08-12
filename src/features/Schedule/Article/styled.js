@@ -3,7 +3,7 @@ import { ChevronDown } from "@styled-icons/heroicons-solid/ChevronDown";
 
 export const StyledArticle = styled.article`
   margin: 0px 30px;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin: 0px;
   }
 `;
@@ -12,7 +12,7 @@ export const Title = styled.h4`
   margin: 0;
   color: ${({ theme }) => theme.colors.text};
   align-self: center;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 20px;
   }
 `;
@@ -25,7 +25,7 @@ export const Button = styled.button`
   width: calc(100% + 60px);
   padding: 15px 30px;
   margin: 20px -30px;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     padding: 5px 30px;
     margin: 10px -30px;
   }
@@ -49,7 +49,7 @@ export const Wrapper = styled.div`
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
   ${(props) =>
@@ -66,7 +66,7 @@ export const Icon = styled.img`
   transform: translateY(5px);
   margin-left: 5px;
   margin: 0;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 25px;
     height: 25px;
   }

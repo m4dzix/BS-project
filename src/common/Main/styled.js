@@ -7,7 +7,7 @@ export const StyledMain = styled.main`
   min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.white};
   margin: 0 auto;
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     padding: 10px;
   }
 `;

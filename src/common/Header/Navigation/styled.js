@@ -9,11 +9,11 @@ export const Nav = styled.nav`
   position: absolute;
   left: 0;
   z-index: 1;
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding-left: 100px;
     position: relative;
   }
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 300px;
     height: 100%;
     left: auto;
@@ -39,10 +39,10 @@ export const List = styled.ul`
   max-width: calc(1200px - 200px);
   margin: 0 auto;
   padding: 0 50px;
-  @media (max-width: 1200px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     margin: 0;
   }
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     grid-template-columns: none;
     grid-gap: 10px;
     padding: 0 20px;
@@ -66,7 +66,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   &.${activeClassName} {
     color: ${({ theme }) => theme.colors.mainColor};
   }
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 18px;
     padding: 7px;
     color: ${({ theme }) => theme.colors.text};

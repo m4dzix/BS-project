@@ -7,12 +7,12 @@ export const StyledTitle = styled.h1`
   font-weight: bold;
   padding: 10px 150px;
   color: ${({ theme }) => theme.colors.text};
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 35px;
     padding: 10px;
     text-align: center;
   }
-  @media (max-width: 420px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
     text-align: left;
     padding-right: 60px;
   }

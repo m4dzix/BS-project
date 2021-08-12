@@ -16,11 +16,11 @@ export const SquareLink = styled(Link)`
     filter: brightness(1.1);
     cursor: pointer;
   }
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     transform: scale(0.8);
     padding: 15px;
   }
-  @media (max-width: 420px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
     display: none;
   }
 `;
@@ -29,7 +29,7 @@ export const Text = styled.p`
   text-transform: uppercase;
   font-size: 80px;
   text-shadow: 0px 5px 4px ${({ theme }) => theme.colors.text};
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     transform: scale(0.8);
   }
 `;

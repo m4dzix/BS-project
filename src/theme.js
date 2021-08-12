@@ -6,4 +6,10 @@ export const theme = {
     background: "#F7FAEF",
     hover: "#9A9A9C",
   },
+  breakpoints: {
+    tablet: "1200px",
+    smallTablet: "823px",
+    mobile: "767px",
+    smallMobile: "430px",
+  },
 };

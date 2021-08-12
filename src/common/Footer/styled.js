@@ -8,7 +8,7 @@ export const Info = styled.p`
   font-size: 18px;
   letter-spacing: 1px;
   text-align: center;
-  color: white;
+  color: ${({ theme }) => theme.colors.white};
   font-weight: 400;
   margin-bottom: 0px;
   padding: 15px;

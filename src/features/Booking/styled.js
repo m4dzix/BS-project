@@ -13,7 +13,7 @@ export const See = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.white};
   font-size: 30px;
   padding: 10px;
   text-align: center;

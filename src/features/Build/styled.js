@@ -12,10 +12,13 @@ export const StyledLink = styled(Link)`
   text-align: center;
   border-radius: 5px;
   width: 300px;
-  align-self: end;
+  align-self: flex-end;
   &:hover {
     filter: brightness(1.5);
     transform: scale(1.1);
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    margin: 0px;
   }
 `;
 
