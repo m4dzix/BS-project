@@ -4,7 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const Calendar = ({ src, googleCalendarId, apartment }) => {
   const { user } = useAuth0();
-  const [newPerson, setNewPerson] = useState(user.name);
+  const [newPerson, setNewPerson] = useState("Name");
   const [secondPerson, setSecondPerson] = useState("Name");
   const [date, setDate] = useState("Date");
   const [startTime, setStartTime] = useState("Start");
@@ -23,7 +23,7 @@ const Calendar = ({ src, googleCalendarId, apartment }) => {
     const DISCOVERY_DOCS = [
       "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
     ];
-    const SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
+    const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 
     gapi.load("client:auth2", () => {
       console.log("loaded client");
