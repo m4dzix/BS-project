@@ -43,7 +43,6 @@ export const Key = styled.dt`
 export const Value = styled.dd`
   font-size: 22px;
   padding: 10px;
-
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 15px;
     padding: 0;

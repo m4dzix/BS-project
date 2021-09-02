@@ -95,17 +95,17 @@ export const Subpage = styled.h3`
       margin-right: 30px;
       font-size: 60px;
       max-width: 450px;
-      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        font-size: 30px;
-        text-align: right;
-        padding-right: 20px;
-      }
       @media (max-width: ${({ theme }) =>
           theme.breakpoints.smallTablet}) and (orientation: landscape) {
         font-size: 30px;
         text-align: right;
         padding-right: 20px;
         margin: 10px;
+      }
+      @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: 30px;
+        text-align: right;
+        padding-right: 20px;
       }
     `}
 `;
