@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/BS-project/static/js/main.ad7d82b6.chunk.js",
-    "main.js.map": "/BS-project/static/js/main.ad7d82b6.chunk.js.map",
-    "runtime-main.js": "/BS-project/static/js/runtime-main.373700ea.js",
-    "runtime-main.js.map": "/BS-project/static/js/runtime-main.373700ea.js.map",
-    "static/css/2.ea11fe1c.chunk.css": "/BS-project/static/css/2.ea11fe1c.chunk.css",
-    "static/js/2.1b7bff6d.chunk.js": "/BS-project/static/js/2.1b7bff6d.chunk.js",
-    "static/js/2.1b7bff6d.chunk.js.map": "/BS-project/static/js/2.1b7bff6d.chunk.js.map",
-    "static/js/3.6bf18abc.chunk.js": "/BS-project/static/js/3.6bf18abc.chunk.js",
-    "static/js/3.6bf18abc.chunk.js.map": "/BS-project/static/js/3.6bf18abc.chunk.js.map",
+    "main.js": "/BS-project/static/js/main.c7ce3aa6.chunk.js",
+    "main.js.map": "/BS-project/static/js/main.c7ce3aa6.chunk.js.map",
+    "runtime-main.js": "/BS-project/static/js/runtime-main.8e725b50.js",
+    "runtime-main.js.map": "/BS-project/static/js/runtime-main.8e725b50.js.map",
+    "static/css/2.ad581902.chunk.css": "/BS-project/static/css/2.ad581902.chunk.css",
+    "static/js/2.30e4221c.chunk.js": "/BS-project/static/js/2.30e4221c.chunk.js",
+    "static/js/2.30e4221c.chunk.js.map": "/BS-project/static/js/2.30e4221c.chunk.js.map",
+    "static/js/3.10918328.chunk.js": "/BS-project/static/js/3.10918328.chunk.js",
+    "static/js/3.10918328.chunk.js.map": "/BS-project/static/js/3.10918328.chunk.js.map",
     "index.html": "/BS-project/index.html",
-    "static/css/2.ea11fe1c.chunk.css.map": "/BS-project/static/css/2.ea11fe1c.chunk.css.map",
-    "static/js/2.1b7bff6d.chunk.js.LICENSE.txt": "/BS-project/static/js/2.1b7bff6d.chunk.js.LICENSE.txt",
+    "static/css/2.ad581902.chunk.css.map": "/BS-project/static/css/2.ad581902.chunk.css.map",
+    "static/js/2.30e4221c.chunk.js.LICENSE.txt": "/BS-project/static/js/2.30e4221c.chunk.js.LICENSE.txt",
     "static/media/foto1.576c4278.jpg": "/BS-project/static/media/foto1.576c4278.jpg",
     "static/media/foto2.41938a50.jpg": "/BS-project/static/media/foto2.41938a50.jpg",
     "static/media/foto3.dd1c8384.jpg": "/BS-project/static/media/foto3.dd1c8384.jpg",
@@ -23,9 +23,9 @@
     "static/media/signLanguage.db7a7f59.png": "/BS-project/static/media/signLanguage.db7a7f59.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.373700ea.js",
-    "static/css/2.ea11fe1c.chunk.css",
-    "static/js/2.1b7bff6d.chunk.js",
-    "static/js/main.ad7d82b6.chunk.js"
+    "static/js/runtime-main.8e725b50.js",
+    "static/css/2.ad581902.chunk.css",
+    "static/js/2.30e4221c.chunk.js",
+    "static/js/main.c7ce3aa6.chunk.js"
   ]
 }
